@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Page</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+
+<body>
+
+    <div id="topNavBar">
+        <div class="container">
+            <div class="wrapper">
+                <div class="left"><a href="index.html">
+                        Online exam by ramim
+                    </a></div>
+                <div class="right">
+                    <a class="login" href="">Login</a>
+                    <a class="registration" href="">Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="submisstionPage">
+        <h1>Your Answer Submitted</h1>
+    </div>
+
+
+
+    <footer>
+        &copy; 2021 ramim. All rights reserved.
+    </footer>
+
+    <script>
+        let iw = window.innerWidth;
+        let rootScreenWidth = 1366;
+        let rootFontPercentage = 59.28;
+        let html = document.querySelector("html")
+
+        if (iw <= 1366) {
+            html.setAttribute("style", `font-size:${rootFontPercentage}%`);
+
+        } else {
+            let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
+            html.setAttribute("style", `font-size:${currentFontSize}%`);
+        }
+    </script>
+</body>
+
+</html>
